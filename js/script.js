@@ -180,17 +180,3 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-
-document.addEventListener("DOMContentLoaded", () => {
-    const slides = document.querySelectorAll(".hero-slide");
-    let index = 0;
-
-    // Garante que o primeiro slide aparece imediatamente
-    slides[0].classList.add("active");
-
-    setInterval(() => {
-        slides[index].classList.remove("active");
-        index = (index + 1) % slides.length;
-        slides[index].classList.add("active");
-    }, 5000); // troca a cada 5 segundos
-});

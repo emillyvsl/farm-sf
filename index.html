@@ -12,27 +12,34 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
     rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="img/logo1.svg">
 </head>
 
 <body>
-  <!-- Botão de idioma -->
-  <div class="language-selector">
-    <button id="lang-pt" class="lang-btn active">PT</button>
-    <button id="lang-en" class="lang-btn">EN</button>
-  </div>
-
-  <!-- Header -->
   <header>
     <div class="container header-container">
+      <!-- Logo -->
       <div class="logo">
-        <img src="img/logo.png" alt="São Francisco Farm Logo" class="logo-img">
+        <img src="img/logo1.svg" alt="São Francisco Farm Logo" class="logo-img">
       </div>
+
+      <!-- Navegação -->
       <nav>
+        <!-- Idiomas -->
+        <div class="language-selector">
+          <button id="lang-pt" class="lang-btn active">PT</button>
+          <button id="lang-en" class="lang-btn">EN</button>
+        </div>
+
+        <!-- Menu hamburguer -->
         <div class="hamburger-menu">
           <span></span>
           <span></span>
           <span></span>
         </div>
+
+        <!-- Itens -->
         <ul class="nav-menu">
           <li><a href="#story" data-pt="Nossa História" data-en="Our Story">Nossa História</a></li>
           <li><a href="#growth" data-pt="Nosso Crescimento" data-en="Our Growth">Nosso Crescimento</a></li>
@@ -44,32 +51,16 @@
     </div>
   </header>
 
+
+
   <!-- Hero Section -->
   <section class="hero-ray-valley">
     <div class="hero-overlay"></div>
 
-    <!-- Carrossel -->
-    <!-- Carrossel -->
-    <div class="hero-carousel">
-      <!-- Slide 1 - Vídeo -->
-      <div class="hero-slide active">
-        <img src="img/cafee.png" alt="Plantação de Café São Francisco">
-      </div>
-
-      <!-- Slide 2 - Imagem -->
-      <div class="hero-slide">
-        <img src="img/plantacao.png" alt="Plantação de Café São Francisco">
-      </div>
-
-      <!-- Slide 3 - Vídeo -->
-      <div class="hero-slide">
-        <video autoplay muted loop playsinline preload="auto">
-          <source src="img/farm.mp4" type="video/mp4">
-          Seu navegador não suporta vídeos em HTML5.
-        </video>
-      </div>
+    <!-- Apenas Imagem -->
+    <div class="hero-banner">
+      <img src="img/sitiooo.jpg" alt="Plantação de Café São Francisco">
     </div>
-
 
     <!-- Conteúdo por cima -->
     <div class="container hero-content-ray-valley">
@@ -81,8 +72,6 @@
       </div>
     </div>
   </section>
-
-
 
   <!-- 🔥 NOVA SEÇÃO COM ÍCONES -->
   <section id="steps" class="steps-section">
@@ -103,9 +92,9 @@
         <div class="step-item">
           <img src="img/seed.png" alt="Ícone de colheita" class="step-icon">
           <h3 data-pt="Colheita" data-en="Harvest">Colheita</h3>
-          <p data-pt="Os grãos são colhidos manualmente no ponto ideal, preservando a qualidade e o sabor."
-            data-en="The beans are hand-picked at the ideal time, preserving quality and flavor.">
-            Os grãos são colhidos manualmente no ponto ideal, preservando a qualidade e o sabor.
+          <p data-pt="Os grãos são colhidos no ponto ideal, preservando a qualidade e o sabor."
+            data-en="The beans are at the ideal time, preserving quality and flavor.">
+            Os grãos são colhidos no ponto ideal, preservando a qualidade e o sabor.
           </p>
         </div>
         <div class="step-item">
@@ -127,9 +116,10 @@
       </div>
     </div>
   </section>
-  <!-- Seção Nossa História -->
-  <section id="story" class="story-full">
-    <div class="story-content">
+
+
+  <section id="story" class="content-section-ray-valley story-gray">
+    <div class="container content-wrapper-ray-valley">
       <!-- Texto -->
       <div class="text-content">
         <h2 class="title-ray-valley" data-pt="Nossa História" data-en="Our Story">Nossa História</h2>
@@ -146,12 +136,13 @@
         </p>
       </div>
 
-      <!-- Imagem colada na lateral -->
-      <div class="image-side">
-        <img src="img/casa.png" alt="Casa da família São Francisco">
+      <!-- Imagem -->
+      <div class="image-full">
+        <img src="img/casa.png" alt="História da fazenda">
       </div>
     </div>
   </section>
+
 
   <!-- Seção Nosso Crescimento -->
   <section id="growth" class="content-section-ray-valley bg-light">
@@ -174,10 +165,6 @@
             <div class="stat-number" data-count="2">0</div>
             <div class="stat-label" data-pt="Premiações" data-en="Awards">Premiações</div>
           </div>
-          <div class="stat-item">
-            <div class="stat-number" data-count="50">0</div>
-            <div class="stat-label" data-pt="Famílias" data-en="Families">Famílias</div>
-          </div>
         </div>
       </div>
     </div>
@@ -192,11 +179,6 @@
           data-en="At São Francisco Farm, we believe coffee is more than a drink — it is a way to create value, preserve culture, and protect nature.">
           Na São Francisco Farm, acreditamos que o café é mais do que uma bebida — é uma forma de criar valor, preservar
           a cultura e proteger a natureza.
-        </p>
-        <p data-pt="Em 2026, estamos lançando um projeto de reflorestamento, incluindo um viveiro que doará mudas para quem estiver interessado em restaurar suas terras."
-          data-en="In 2026, we are launching a reforestation project, including a nursery that will donate seedlings to those interested in restoring their land.">
-          Em 2026, estamos lançando um projeto de reflorestamento, incluindo um viveiro que doará mudas para quem
-          estiver interessado em restaurar suas terras.
         </p>
       </div>
       <div class="image-content">
@@ -248,22 +230,19 @@
           </p>
           <div class="contact-details">
             <div class="contact-item">
-              <i class="fas fa-envelope"></i>
-              <span>@sitiosaofrancisco_since2009</span>
+              <i class="fa-brands fa-square-instagram" style="color: #1b5e20;"></i>
+              <a href="https://www.instagram.com/sitiosaofrancisco_since2009/" target="_blank"
+                aria-label="Instagram"><span>@sitiosaofrancisco_since2009</span></a>
             </div>
+
             <div class="contact-item">
               <i class="fas fa-phone"></i>
-              <span data-pt="+55 (68) 99232-0273" data-en="+55 (68) 99232-0273">+55 (68) 99232-0273</span>
+              <span data-pt="+55 (68) 99996-2178" data-en="+55 (68) 99996-2178">+55 (68) 99996-2178</span>
             </div>
             <div class="contact-item">
               <i class="fas fa-map-marker-alt"></i>
               <span data-pt="Cruzeiro do Sul, Acre" data-en="Cruzeiro do Sul, Acre">Cruzeiro do Sul, Acre</span>
             </div>
-          </div>
-          <div class="social-links">
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
       </div>
@@ -275,10 +254,10 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="img/logo.png" alt="São Francisco Farm Logo" class="logo-img">
+          <img src="img/logo2.svg" alt="São Francisco Farm Logo" class="logo-img">
           <p data-pt="São Francisco Farm - Onde a tradição encontra o futuro do café"
             data-en="São Francisco Farm - Where tradition meets the future of coffee">
-            São Francisco Farm - Onde a tradição encontra o futuro do café
+            São Francisco Farm - Onde a tradição encontra o futuro do café.
           </p>
         </div>
         <div class="footer-links">
